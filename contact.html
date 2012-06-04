@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Christmas Crew ltd</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        var emailfilter=/^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|\d+)$/i
+        function checkmail(e){
+	        if(e.value ==""){
+		        returnval = true;
+	        }
+	        else {
+		        var returnval=emailfilter.test(e.value)
+                
+		        if (returnval==false){
+			        alert("Please enter a valid email address.")
+			        e.select()
+		        }
+	        }
+	        return returnval
+        }
+    </script>
+    <script language="JavaScript">
+        function formCheck(formobj){
+        
+        	// Enter name of mandatory fields
+        	var fieldRequired = Array("Name", "Email");
+        
+        	// Enter field description to appear in the dialog box
+        	var fieldDescription = Array("Your Name", "Your Email");
+        
+        	// dialog message
+        	var alertMsg = "Please complete the following required fields:\n";
+        
+        	var l_Msg = alertMsg.length;
+        
+        	for (var i = 0; i < fieldRequired.length; i++){
+        		var obj = formobj.elements[fieldRequired[i]];
+        		if (obj){
+        			switch(obj.type){
+        			case "select-one":
+        				if (obj.selectedIndex == -1 || obj.options[obj.selectedIndex].text == ""){
+        					alertMsg += " - " + fieldDescription[i] + "\n";
+        				}
+        				break;
+        
+        			case "select-multiple":
+        				if (obj.selectedIndex == -1){
+        					alertMsg += " - " + fieldDescription[i] + "\n";
+        				}
+        				break;
+        			case "text":
+        
+        			case "textarea":
+        				if (obj.value == "" || obj.value == null){
+        					alertMsg += " - " + fieldDescription[i] + "\n";
+        				}
+        				break;
+        			default:
+        			}
+        
+        			if (obj.type == undefined){
+        				var blnchecked = false;
+        				for (var j = 0; j < obj.length; j++){
+        					if (obj[j].checked){
+        						blnchecked = true;
+        					}
+        				}
+        
+        				if (!blnchecked){
+        					alertMsg += " - " + fieldDescription[i] + "\n";
+        				}
+        			}
+        		}
+        	}
+        
+        	if (alertMsg.length == l_Msg){
+        		return true;
+        	}else{
+        		alert(alertMsg);
+        		return false;
+        	}
+        }
+        // -->
+    </script>
+    <style type="text/css">
+    <!--
+        .style1 {
+	        color: #FF0000;
+	        font-weight: bold;
+        }
+        .style2 {color: #FF0000}
+    -->
+    </style>
+</head>
+
+<body>
+<img alt="" src="images/spacer.gif" width="1" height="20"><br>
+<div class="wrap">
+<div id="top">
+<!--_____________________________________________________top_left_content_____________________________________________________-->
+<div id="top_left_4">
+	<div style="margin-left:5px; margin-top:1px; margin-right:5px; margin-bottom: 10px; background-color:#FFFFFF">
+		<img alt="" src="images/spacer.gif" width="1" height="33"><a href="index.html"><img src="images/logo.gif" width="467" height="98" border="0" alt="Grotto Management Services"></a>
+	</div>
+	<img alt="" src="images/spacer.gif" width="1" height="55"><br>
+	<img alt="" src="images/spacer.gif" width="27" height="8"><br>
+	<img alt="" src="images/spacer.gif" width="1" height="18"><br>
+	<img alt="" src="images/spacer.gif" width="27" height="1"><br>
+	<img alt="" src="images/spacer.gif" width="1" height="17"><br>
+	<img alt="" src="images/spacer.gif" width="27" height="1"><br>
+	<img alt="" src="images/spacer.gif" width="1" height="19"><br>
+	<img alt="" src="images/spacer.gif" width="27" height="1"><br>
+	<img alt="" src="images/spacer.gif" width="1" height="18"><br>
+	<img alt="" src="images/spacer.gif" width="27" height="1"><br>
+	<img alt="" src="images/spacer.gif" width="1" height="18"><br>
+
+</div>
+<!--_____________________________________________________end_top_left_content_____________________________________________________-->
+
+<!--_____________________________________________________top_right_content_____________________________________________________-->
+<div id="top_right">
+<div align="right">
+  <div style="margin-top:5px"><img src="images/m05.gif" width="80" height="75" alt="bell"></div>
+  <br>
+    <img alt="" src="images/spacer.gif" width="1" height="4"><br>
+    <br>
+</div>
+<div style="margin-left:24px; margin-right:24px " class="white">
+<img alt="" src="images/txt1.jpg"><br>
+<span class="bigger"><strong><img alt="" src="images/spacer.gif" width="1" height="10">Contact us </strong></span><br>
+<img alt="" src="images/line.jpg"><br>
+<img alt="" src="images/spacer.gif" width="1" height="14"><br>
+“.. If you would like to know more, please contact us via the link below or give us a call..”<br>
+<img alt="" src="images/spacer.gif" width="1" height="14"><br>
+<img alt="" src="images/line.jpg"><br>
+<img alt="" src="images/spacer.gif" width="1" height="5"><br>
+<div align="right" style="margin-right:8px ">Alastair Cowie<br>
+<a href="#" class="brown a">Grotto Management Services</a></div>
+</div>
+</div>
+<!--_____________________________________________________________end_top_right_content_____________________________________________________-->
+</div>
+
+<div id="content" class="clear">
+<!--_____________________________________________________left_block_____________________________________________________-->
+<div id="left_block">
+<div class="inner_left_block t sm">
+&bull;&nbsp;&nbsp;&nbsp;<a href="index.html" class="style1">Home</a><br>
+<div style="margin-top:8px; margin-bottom:8px; height:1px; background:#E9E9E9 "><img alt="" src="images/spacer.gif"></div>
+&bull;&nbsp;&nbsp;&nbsp;<a href="services.html" class="style1">Our Services </a><br>
+<div style="margin-top:8px; margin-bottom:8px; height:1px; background:#E9E9E9 "><img alt="" src="images/spacer.gif"></div>
+&bull;&nbsp;&nbsp;&nbsp;<a href="gallery.html" class="style1">Gallery</a><br>
+<div style="margin-top:8px; margin-bottom:8px; height:1px; background:#E9E9E9 "><img alt="" src="images/spacer.gif"></div>
+&bull;&nbsp;&nbsp;&nbsp;<a href="contact.html" class="style1">Contact Us </a><br>
+<br><p align="left" style="margin-top:15px"><br>
+</p>
+</div>
+	 <div id="sponsor">
+		<a href="http://www.sheffieldsteelers.co.uk" target="_blank">
+		<img src="images/steelerslogocolour_small.jpg" alt="Sheffield Steelers" width="140" height="138" border="0"></a><br>
+		Christmas Crew Ltd. Proud sponsors to the Sheffield Steelers Ice Hockey Club	 </div>
+</div>
+
+<!--_____________________________________________________end_left_block_____________________________________________________-->
+
+<!--_____________________________________________________right_block_____________________________________________________-->
+<div id="right_block">
+<!--_____________________________________________________left_content_____________________________________________________-->
+<div id="left_content1">
+<div class="inner_left1">
+  <p><strong class="red">Contact us online </strong>
+    <img alt="" src="images/spacer.gif" width="1" height="7">    </p>
+  <form name="form1" method="post" action="contact.php" onSubmit="return formCheck(this);">
+    <table width="90%"  border="0" cellpadding="3" cellspacing="0" class="big">
+      <tr>
+        <td width="25%" class="small">Name:</td>
+        <td width="75%"><input name="Name" type="text" class="small" id="Name" size="20"></td>
+      </tr>
+      <tr>
+        <td class="small">Email:</td>
+        <td><span class="bot_txt">
+          <input name="Email" type="text" class="small" id="Email" size="20">
+        </span></td>
+      </tr>
+      <tr>
+        <td valign="top" class="small">Message:</td>
+        <td><textarea name="Message" cols="20" rows="6" class="small" id="Message"></textarea></td>
+      </tr>
+      <tr>
+        <td class="inner_right1">&nbsp;</td>
+        <td><input name="Submit" type="submit" class="small" value="SUBMIT" onclick="return checkmail(this.form.Email)" ></td>
+      </tr>
+    </table>
+    <br>
+  </form>
+  </div>
+</div>
+<!--_____________________________________________________________end_left_content_____________________________________________________-->
+
+<!--_____________________________________________________right_content_____________________________________________________-->
+<div id="right_content1">
+<div class="inner_right1">
+<p class="vcard">
+	<strong class="red">Contact Us</strong>
+	<br><br>
+	<span class="fn">Alastair Cowie</span> &amp; Judith Cowie<br><br>
+	<span class="org"><strong>Grotto Management Services</strong></span>
+	<span class="addr">
+	    <br><span class="street-address">Church Barn</span>,
+	    <br><span>St. Mary's Gate</span>
+	    <br><span class="locality-address">Tickhill</span>,
+	    <br><span class="region">South Yorkshire</span>
+	    <br><span class="postal-code">DN11 9LY</span>
+	</span>
+	<br><br>Tel: <span class="tel">07796 688474</span>
+	<br><br>Email:
+	<a class="style2" href="mailto:mail@christmascrew.co.uk">mail@christmascrew.co.uk</a>
+	<br>
+	<img height="22" width="1" src="images/spacer.gif" alt="">
+	<br>
+	<img alt="" src="images/spacer.gif" width="1" height="20"><br>
+	<a href="http://www.doncaster-chamber.co.uk/" target="_blank"><img src="images/chamber_logo_small.gif" alt="Chamber of Doncaster Chamber" width="150" height="66" border="0" style="margin-left:25px"></a></p>
+</div>
+</div>
+<!--_____________________________________________________________end_right_content_____________________________________________________-->
+</div>
+<!--_____________________________________________________end_right_block_____________________________________________________-->
+
+
+</div>
+	<div id="footer" class="clear bot_txt">
+		<div class="line"><img alt="" src="images/spacer.gif"></div>
+		<br>
+		<div class="copyright">
+			<strong>Christmas Crew Ltd. &copy; 2008</strong>  <span style="margin-left:380px"><a href="contact.html" class="style2">Contact Us</a></span><br>
+			Registered office: 9 St. George's Yard, Castle Street, Farnham, Surrey, GU9 7LW.<br>
+			Registered in England &amp; Wales Company number: 05865603
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-6667315-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+</script>
+</body>
+</html>

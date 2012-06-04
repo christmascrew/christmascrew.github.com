@@ -1,0 +1,11 @@
+h2. The source for the chirstmascrew.co.uk website.
+
+This is unlikely to be of interest to anyone 
+(unless you want to see how a website should _not_ be constructed).
+
+h2. Todo
+
+* Clean up the existing html to get a clearer understanding of the current state
+* Decide on a cms or a static generator
+* Migrate
+* Move to webfaction
